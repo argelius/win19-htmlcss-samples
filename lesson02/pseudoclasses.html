@@ -10,14 +10,6 @@
         background-color: yellow;
       }
 
-      a:link {
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
       .nice-button {
         border: none;
         background-color: blue;
@@ -29,7 +21,15 @@
       }
 
       .nice-button:active {
-        background-color: black;
+        background-color: purple;
+      }
+
+      .my-link:link {
+        text-decoration: none;
+      }
+
+      .my-link:hover {
+        text-decoration: underline;
       }
     </style>
     
@@ -37,22 +37,23 @@
 
   <body>
     <div>
-      <h2>Highlight</h2>
-      Hej hej
-      <span class="highlight">Hello, world!</span>
-      Hej hej
-    </div>
-
-    <hr>
-
-    <div>
-      <h2>Button</h2>
-      <button class="nice-button">Click me!</button>
+      <h2>Highlight 2.0</h2>
+      <p>
+      Lorem ipsum <span class="highlight">dolor</span> sit amet, consectetur adipisicing elit, sed do eiusmod <span class="highlight">tempor incididunt</span> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
     </div>
 
     <div>
-      <h2>Link</h2>
-      <a href="https://www.google.com">Google</a>
+      <h2>Interaktiv knapp</h2>
+
+      <button class="nice-button">Klicka här</button>
     </div>
+
+    <div>
+      <h2>Länk</h2>
+
+      <a class="my-link" href="https://www.google.com/">Google</a>
+    </div>
+
   </body>
 </html>

@@ -35,6 +35,16 @@
         font-size: 10px;
       }
 
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        margin: 10px;
+      }
+
+      .box:empty {
+        background-color: red;
+      }
     </style>
 
   </head>
@@ -71,5 +81,8 @@
       <li>J</li>
       <li>K</li>
     </ul>
+
+    <div class="box">Hej</div>
+    <div class="box"></div>
   </body>
 </html>

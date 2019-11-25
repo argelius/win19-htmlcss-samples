@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #6A1384;
+  color: #FFF;
+  text-align: center;
+}
+
+header > div {
+  padding: 20px;
+  font-size: 50px;
+}
+
+header .small-title {
+  display: none;
+}
+
+header .bigger-title {
+  display: none;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #eaeaea;
+  position: fixed;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 10px;
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  header .big-title {
+    display: none;
+  }
+
+  header .small-title {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .bigger-title {
+    display: block;
+  }
+
+  header .big-title {
+    display: none;
+  }
+}

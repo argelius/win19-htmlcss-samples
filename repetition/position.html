@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>Position example</title>
+          
+    <style>
+      .outer-box {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        padding: 20px;
+      }
+
+      .inner-box {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        overflow: hidden;
+      }
+
+      .red-circle {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 30px;
+        height: 30px;
+        background-color: green;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-box">
+      <div class="inner-box">
+        <div class="red-circle"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

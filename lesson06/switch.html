@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title></title>
+
+    <style>
+      body {
+        padding: 30px;
+      }
+
+      .switch > input[type="checkbox"] {
+        border: 0;
+        clip: rect(0 0 0 0);
+        padding: 0;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        position: absolute;
+      }
+
+      .track {
+        display: inline-block;
+        width: 50px;
+        height: 20px;
+        background-color: #c6c6c6;
+        border-radius: 10px;
+        position: relative;
+        transition: background-color 0.2s linear;
+      }
+
+      .track::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #6200ee;
+        position: absolute;
+        top: -5px;
+        transition: transform 0.3s ease-out;
+        box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.20);
+      }
+
+      .switch > input[type="checkbox"]:checked + .track::before {
+        transform: translateX(20px);
+      }
+
+      .switch > input[type="checkbox"]:checked + .track {
+        background-color: #c39ef8;
+      }
+
+    </style>
+    
+  </head>
+  <body>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="track"></span>
+    </label>
+  </body>
+</html>

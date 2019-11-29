@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>Checkbox</title>
+
+    <style>
+      body {
+        padding: 50px;
+      }
+
+      .checkbox > input[type="checkbox"] {
+        border: 0;
+        clip: rect(0 0 0 0);
+        padding: 0;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        position: absolute;
+      }
+
+      .checkbox > .fake {
+        cursor: pointer;
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        border: 1px solid black;
+        margin: 5px;
+      }
+
+      .checkbox > input[type="checkbox"]:checked + .fake {
+        background-color: red;
+      }
+
+
+
+    </style>
+        
+  </head>
+  <body>
+    <h1>Mina egna checkboxar</h1>
+    <label class="checkbox">
+      <input type="checkbox">
+      <span class="fake"></span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox">
+      <span class="fake"></span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox">
+      <span class="fake"></span>
+    </label>
+  </body>
+</html>
